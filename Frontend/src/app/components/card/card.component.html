@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem; margin-top: 25px;">
+    <h5 class="card-header">{{movie.name}}</h5>
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">{{movie.desc}}</h6>
+        <p class="card-text">Release Date : {{movie.release_date}}</p>
+        <p class="card-text">Number of actors : {{movie.num_actors}}</p>
+        <p class="card-text">Likes : {{movie.like}}</p>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-primary" style="margin-right: 10px;" (click)="likeHandler(movie)"><i class="bi bi-hand-thumbs-up-fill"></i></button>
+            <button class="btn btn-danger" (click)="dislikeHandler(movie)"><i class="bi bi-hand-thumbs-down-fill"></i></button>
+        </div>
+    </div>
+  </div>

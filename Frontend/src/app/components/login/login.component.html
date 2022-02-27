@@ -1,0 +1,14 @@
+<div class="container my-3">
+    <h3>Login</h3>
+    <form (ngSubmit)="loginHandler()">
+        <div class="mb-3">
+            <label for="username" class="form-label">User Name</label>
+            <input type="username" class="form-control" id="username" [(ngModel)]="username"  name="username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="password"  name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
